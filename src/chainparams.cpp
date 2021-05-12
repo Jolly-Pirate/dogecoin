@@ -80,10 +80,10 @@ public:
         consensus.nMajorityRejectBlockOutdated = 1900;
         consensus.nMajorityWindow = 2000;
         // BIP34 is never enforced in Dogecoin v2 blocks, so we enforce from v3
-        consensus.BIP34Height = 10;
-        consensus.BIP34Hash = uint256S("0x00"); // be active from the start
-        consensus.BIP65Height = 10;
-        consensus.BIP66Height = 10;
+        consensus.BIP34Height = 1;
+        consensus.BIP34Hash = uint256S("0x00");
+        consensus.BIP65Height = 1;
+        consensus.BIP66Height = 1;
         consensus.powLimit = uint256S("0x00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20;
         consensus.nPowTargetTimespan = 4 * 60 * 60; // pre-digishield: 4 hours
         consensus.nPowTargetSpacing = 60; // 1 minute
